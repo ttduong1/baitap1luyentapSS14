@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="star"></p>
+    <p id="constellations"></p>
+    <script>
+        let folaris = ["Ursa Minor"];
+        let Aldebaran = ["Tarurus"];
+        let Deneb = ["Cygnus"];
+        let Vega = ["Lyra"];
+        let Altair =["Aquila"];
+        let Dubhe = ["Ursa Major"];
+        let Regulus = ["Leo"];
+
+      const star = ["Floria", "Aldebaran", "Deneb", "Vega", "Dubhe", "Regulus"];
+      document.getElementById("star").innerHTML = star;
+      const constellations = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+      document.getElementById("constellations").innerHTML = constellations;
+    </script> -->
+    <script>
+        let star = ["Floria", "Aldebaran", "Deneb", "Vega", "Dubhe", "Regulus"];
+        let constellations = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+        let input = prompt("Mày nhập tên ngôi sao vào đây: ");
+        for (const key in star){
+            if (input == star[key]) {
+                document.write(constellations[key]);
+            } else if (input === star[key]) {
+                alert("Đéo có chòm nào chứa ngôi sao của mày");
+            }
+        }
+    </script>
+</body>
+</html>
